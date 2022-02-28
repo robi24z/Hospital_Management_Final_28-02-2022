@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: white;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+}
+
+.about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #ad5858;
+	color: white;
+}
+
+.container {
+	padding: 0 16px;
+}
+
+.container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.title {
+	color: grey;
+}
+
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color:white;
+	background-color: red;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+
+.button:hover {
+	background-color:black;
+}
+
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="about-section">
+		<h1>About Us</h1>
+		<p>
+			We Provide The Best Treatment <br>
+		</p>
+		<h1>Our Vision And Mission</h1>
+		<p>We gives you a good packages for you aims at rendering quality
+			medical service to all irrespective of caste, color, creed and
+			religion.</p>
+	</div>
+
+	<h2 style="text-align: center">Our Team</h2>
+	<div class="row">
+		<div class="column">
+			<div class="card"></div>
+		</div>
+
+		<div class="column">
+
+			<div class="card">
+
+				<img src="about.jpg" style="width: 100%">
+				<div class="container">
+
+					<h2>RS HEALTH CARE</h2>
+					<p class="title">Admin</p>
+					<p>Contact via email.</p>
+					<p>rs123@gmail.com</p>
+					<p>
+						<button class="button">
+							<a href="home.html">HOME</a>
+							
+						</button>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

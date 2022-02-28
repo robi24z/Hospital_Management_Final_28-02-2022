@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>hospital online portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body, h1, h2, h3, h4, h5 {
+	font-family: "Poppins", sans-serif, font-weight 900;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	font-size: 16px;
+	background-image: url("disease.jpg");
+	background-size: 1800px;
+	background-repeat: no-repeat;
+}
+
+.w3-jumbo {
+	color: red;
+}
+
+#services {
+	color: white;
+}
+</style>
+<body>
+
+
+	<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+		style="z-index: 3; width: 300px; font-weight: bold;" id="mySidebar">
+		<br> <a href="javascript:void(0)" onclick="w3_close()"
+			class="w3-button w3-hide-large w3-display-topleft"
+			style="width: 100%; font-size: 22px">Close Menu</a>
+		<div class="w3-container">
+			<h3 class="w3-padding-64"></h3>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#" onclick="w3_close()"
+				class="w3-bar-item w3-button w3-hover-white">Home</a> <a
+				href="#services" onclick="w3_close()"
+				class="w3-bar-item w3-button w3-hover-white">Services</a> <a
+				href="aboutus.html" onclick="w3_close()"
+				class="w3-bar-item w3-button w3-hover-white">About Us</a> <a
+				href="#contact" onclick="w3_close()"
+				class="w3-bar-item w3-button w3-hover-white">Contact</a> <a
+				href="appoinment.jsp" onclick="w3_close()"
+				class="w3-bar-item w3-button w3-hover-white">Book An Appoinment</a>
+			<a href="viewpatienttest.html" onclick="w3_close()"
+				class="w3-bar-item w3-button w3-hover-white">Patient Speak</a>
+
+		</div>
+	</nav>
+
+
+	<!-- Top menu on small screens -->
+	<header
+		class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+		<a href="javascript:void(0)" class="w3-button w3-red w3-margin-right"
+			onclick="w3_open()">☰</a> <span></span>
+	</header>
+
+	<!-- Overlay effect when opening sidebar on small screens -->
+	<div class="w3-overlay w3-hide-large" onclick="w3_close()"
+		style="cursor: pointer" title="close side menu" id="myOverlay"></div>
+
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+
+		<!-- Header -->
+		<div class="w3-container" style="margin-top: 80px" id="showcase">
+			<h1 class="w3-jumbo">
+				<b>RS HEALTH CARE +</b>
+			</h1>
+
+
+
+
+			<!-- Modal for full size images on click-->
+			<div id="modal01" class="w3-modal w3-black" style="padding-top: 0"
+				onclick="this.style.display='none'">
+				<span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+				<div
+					class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+					<img id="img01" class="w3-image">
+					<p id="caption"></p>
+				</div>
+			</div>
+
+			<!-- Services -->
+			<div class="w3-container" id="services" style="margin-top: 75px">
+				<h1 class="w3-xxxlarge w3-text-red">
+					<b>Services.</b>
+				</h1>
+				<hr style="width: 50px; border: 5px solid red" class="w3-round">
+				<p>
+				<h1>We Provide 24 Hours Service</h1>
+
+				<p>
+				<h1>Our Hospital Offers The Citizens To Consult Doctors ,Select
+					Doctors,Book Appoinments Virtually.</h1>
+			</div>
+		</div>
+
+		<!-- Designers -->
+		<div class="w3-container" id="designers" style="margin-top: 75px">
+			<h1 class="w3-xxxlarge w3-text-red">
+				<b>Our Consultants.</b>
+			</h1>
+			<hr style="width: 50px; border: 5px solid red" class="w3-round">
+			<p>
+			<h1>The best team in the world.</h1>
+
+			<p>
+			<h1>An amazing doctor is hard to find and impossible to forgot..</h1>
+
+			<p></p>
+		</div>
+
+		<!-- The Team -->
+		<div class="w3-row-padding w3-grayscale">
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Sreelakshmi</h3>
+						<p class="w3-opacity">MBBS/MS/MD</p>
+						<p>CARDIOLOGIST.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Althaf</h3>
+						<p class="w3-opacity">MBBS/MS/MD</p>
+						<p>NEUROSURGEON.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Varun</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>FAMILY MEDICINE.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr RONY</h3>
+						<p class="w3-opacity">MBBS/MS/MD</p>
+						<p>ANESTHETICS.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr VARMA</h3>
+						<p class="w3-opacity">MBBS/MS/MD</p>
+						<p>PULMNOLOGIST.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Lucy</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>GENERAL MEDICINE.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team2.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Mercy</h3>
+						<p class="w3-opacity">MBBS/MS/MD</p>
+						<p>GYNECOLOGY.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team1.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Nifina N</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>DERMATOLOGY.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Ajmal v</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>RADIOLOGY.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Jennifer</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>GENERAL MEDICINE.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Vijay</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>Psychiatry.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Dennson</h3>
+						<p class="w3-opacity">MBBS/MD/MS</p>
+						<p>ENT.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Jude</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>Pediatrician.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr Kavya</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>Physician.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<img src="/w3images/team3.jpg" alt="." style="width: 100%">
+					<div class="w3-container">
+						<h3>Dr N Krithik</h3>
+						<p class="w3-opacity">MBBS/MD</p>
+						<p>Genaral Medicine.</p>
+						<a href="appoinment.jsp"> <input type="submit"
+							value="Register">
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Blogs -->
+		<!--<div class="w4-container" id="blogs" style="margin-top: 75px;">
+ <h1 class="w4-xxxlarge w4-text-red">
+ <b>Blogs</b>
+ </h1>
+ </div>
+   -->
+
+		<!-- Contact -->
+		<div class="w3-container" id="contact" style="margin-top: 75px">
+			<h1 class="w3-xxxlarge w3-text-red">
+				<b>Contact Us.</b>
+			</h1>
+			<hr style="width: 50px; border: 5px solid red" class="w3-round">
+			<p>
+			<h1>24 Hours Help Line</h1>
+
+			<form action="/action_page.php" target="_blank">
+				<div class="w3-section">
+					<label>Ph NO:0471-2593134<br>0471-2530247
+					</label>
+				</div>
+				<div class="w3-section">
+					<label>Email:hospt123@gmail.com</label>
+				</div>
+				<div class="w3-section">
+					<label>Mobile No:+91-9496661653<br>+91-9747466312
+					</label>
+				</div>
+
+			</form>
+		</div>
+
+
+	</div>
+</body>
+</html>
